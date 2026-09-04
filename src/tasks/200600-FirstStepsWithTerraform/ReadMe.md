@@ -1,20 +1,7 @@
-# LearnMsFoundry
-A repo to learn Microsoft Foundry
-
-The gitignore is got from [here](https://github.com/microsoft/Foundry-Local/blob/main/.gitignore)
 
 
 
-# References
-1. https://www.youtube.com/shorts/-9SzGRbaS_E
-2. https://scanlibs.com/?s=Microsoft+Foundry
-3. https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry?tabs=csharp
-4. https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local
-5. https://github.com/microsoft/agent-framework/tree/main/dotnet
-6. https://learn.microsoft.com/en-us/agent-framework/overview
-7. https://github.com/microsoft/agent-framework/tree/main/dotnet
-8. https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent
-9. https://zerotomastery.io/courses/azure-ai-bootcamp/
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cognitive_account
 
 
 # 1. Define required providers
@@ -60,10 +47,7 @@ resource "azurerm_cognitive_account_project" "foundry_project" {
 }
 
 
-Google Search the following 
-how to create an azure resource of type foundry using cli
 
 
 
-## Use the following to remove unwanted files using powershell.
-Get-ChildItem -Path . -Recurse -File -Include "main.destroy.tfplan", "main.tfplan", "terraform.tfstate", "terraform.tfstate.backup" | Remove-Item -Force
+
