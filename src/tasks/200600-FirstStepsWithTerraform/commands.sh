@@ -34,9 +34,19 @@ terraform apply main.tfplan
 
 terraform state list
 
+terraform show terraform.tfstate
+
 # For the following command to work, you need to pass on the resource, or data source.
 # This resource or data source is got from terraform state list command
 terraform state show azurerm_resource_group.foundry_rg
+
+terraform state show random_string.rg_suffix
+
+terraform state show azurerm_cognitive_account.foundry_resource
+
+terraform state show azurerm_cognitive_account_project.foundry_project
+
+terraform show terraform.tfstate
 
 terraform plan -destroy -out main.destroy.tfplan
 

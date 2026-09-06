@@ -10,7 +10,7 @@ variable "resource_group_middlename" {
 }
 
 variable "resource_group_location" {
-  default     = "centralindia"
+  default     = "southindia"
   description = "Location of the resource group."
 }
 

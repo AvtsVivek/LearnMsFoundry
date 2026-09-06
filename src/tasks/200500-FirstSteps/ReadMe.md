@@ -2,7 +2,7 @@
 
 # The following are the steps.
 
-1. Visit https://ai.azure.com/home. Then click Start Building.
+1. Visit https://ai.azure.com/home. Then click Start Building. Note, I am not seeing Start Building now.
 
 ![AI Azure portal](images/49_40_AiAzureHomeForLogin.png)
 
@@ -32,7 +32,7 @@
 
 ![Details of the new project](images/52_50_NewProjectDetails.png)
 
-9. I am creatng Vivek-First-Agentjic-Project-One
+9. I am creatng Vivek-First-Agentic-Project-One. The following will take a while.
 
 ![Setting up the project](images/53_50_SettingUpProject.png)
 

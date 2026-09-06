@@ -19,7 +19,9 @@
 
  - And there's no reasoning. AI agents, on the other hand, are flexible and dynamic. They don't just follow steps.
 
- - They figure out which steps to take. They reason, make decisions, and even change their approach based on the situation. It's like giving your automation a brain.
+ - They figure out which steps to take. They reason, make decisions, and even change their approach based on the situation. 
+ 
+ - It's like giving your automation a brain.
 
 3. An AI agent is a system with 
 
@@ -84,7 +86,9 @@
 
  - Microsoft Agent Framework brings those ideas together into a single, forward-looking foundation for agent development.
 
- - MAF is not just another SDK. MAF can define
+ - MAF is not just another SDK. 
+ 
+ 11. MAF can define
  
  - how agents reason, 
  
@@ -94,9 +98,9 @@
  
  - how multi-agent systems and agent workflows are structured. 
  
- - In other words, the framework defines the behavior
+ - In other words, the framework defines the agent behavior
 
- 11. What is a Client?
+ 12. What is a Client?
 
  - When you create an agent in Microsoft Foundry, it runs as a managed cloud service. The agent lives inside the Foundry project on the cloud.
 
@@ -110,7 +114,15 @@
 
  - The agent handles its own memory, reasoning loop, and tool execution.
 
- 12. Separating agents from models. Your client app can
+ 13. Microsoft Foundry SDKs
+
+ - Azure AI Project SDK
+
+ - Microsoft Agent Framework (MAF) SDK(available for .NET and python)
+
+ - Open AI compatible SDKs 
+ 
+ 14. Separating agents from models. Your client app can
 
  - call a model API directly.
  
@@ -120,7 +132,7 @@
  
  - decides when to call tools.
 
- 13. With an agent, your client app sends a task or message. Then the agent 
+ 15. With an agent, your client app sends a task or message. Then the agent 
  
  - reasons about it, 
  
@@ -130,5 +142,16 @@
 
  n This is why in real systems, Microsoft strongly encourages an agent-first approach. Your application doesn't care how the answer is produced. 
 
+16. What is https://ai.azure.com/home
+
+ - This is the Microsoft Foundry dashboard in Azure.
+
+ - Central hub for building, managing and deploying agents and workflows. 
+
+ - You can create projects, manage A-Resources, and deploy models. 
+ 
+ - It lets you design agents, connect them to tools and knowledge sources, and run evaluations and tracing. 
+ 
+ - Think of it as Azure's control panel for enterprise AI and agent-based applications.
 
 

@@ -549,3 +549,30 @@ $RECYCLE.BIN/
 # Crash logs and CLI configurations
 crash.log
 *.tfvars
+
+# Local micro--plugins and binaries
+.terraform/
+
+# .tfstate files contain raw sensitive data/secrets. Never commit these!
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.tfplan
+plan.tfplan
+tfplan
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
