@@ -52,13 +52,19 @@ terraform show terraform.tfstate
 
 cd ..
 
+pwsh CreateEnvForPython.ps1
+
 python -m venv maf-env
 
 dir
 
 python --version
 
+python create_prompt_agent.py
+
 cd maf-env
+
+cd ..
 
 .\maf-env\Scripts\activate
 
@@ -72,6 +78,7 @@ python --version
 
 python ./agent_maf.py
 
+cd ./terraform
 
 terraform plan -destroy -out main.destroy.tfplan
 

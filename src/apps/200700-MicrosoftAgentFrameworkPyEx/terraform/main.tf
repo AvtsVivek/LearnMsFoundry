@@ -76,17 +76,10 @@ resource "azurerm_cognitive_deployment" "gpt5_mini_deployment" {
   rai_policy_name = "Microsoft.Default"
 }
 
-# 5. Sequential Delay Mechanism
-resource "time_sleep" "wait_for_prior_task_completions" {
-  # Ensures the timer stays alive until the project is completely gone
-  depends_on       = [azurerm_cognitive_deployment.gpt5_mini_deployment]
-  destroy_duration = "10s"
-  create_duration  = "10s" # Adjust to "30s" or "90s" if needed
-}
 
-# 6. Microsoft Foundry Project
+# 5. Microsoft Foundry Project
 resource "azurerm_cognitive_account_project" "foundry_project" {
-  depends_on           = [time_sleep.wait_for_prior_task_completions, azurerm_cognitive_deployment.gpt5_mini_deployment]
+  depends_on           = [azurerm_cognitive_deployment.gpt5_mini_deployment]
   name                 = "vivek-foundry-core-env-project-${random_string.rg_suffix.result}"
   cognitive_account_id = azurerm_cognitive_account.foundry_resource.id
   location             = azurerm_resource_group.foundry_rg.location
