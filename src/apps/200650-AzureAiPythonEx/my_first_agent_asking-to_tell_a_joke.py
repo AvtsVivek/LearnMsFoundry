@@ -4,7 +4,7 @@
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 
-endpoint = "https://vivek-foundry-core-env-subdomain-9qb9jc.services.ai.azure.com/api/projects/vivek-foundry-core-env-project-9qb9jc"
+endpoint = "https://vivek-foundry-core-env-subdomain-dawup3.services.ai.azure.com/api/projects/vivek-foundry-core-env-project-dawup3"
 
 project_client = AIProjectClient(
     endpoint=endpoint,

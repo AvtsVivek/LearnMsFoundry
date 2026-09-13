@@ -60,6 +60,18 @@ dir
 
 python --version
 
+pip install python-dotenv
+
+pip show python-dotenv
+
+pip install agent-framework-foundry
+
+pip show agent-framework-foundry
+
+pip install agent-framework-foundry
+
+pip show agent-framework-foundry
+
 python create_prompt_agent.py
 
 cd maf-env
@@ -67,10 +79,6 @@ cd maf-env
 cd ..
 
 .\maf-env\Scripts\activate
-
-pip install agent-framework-foundry
-
-pip show agent-framework-foundry
 
 dir
 

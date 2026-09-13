@@ -94,7 +94,7 @@ resource "azurerm_cognitive_account_project" "foundry_project" {
 }
 ```
 
-# 6. Now login to ai.azure.com
+# 5. Now login to ai.azure.com
 
 First Login to ai.azure.com. You will be take to the following. Select resources.
 
@@ -129,15 +129,16 @@ What this means in practice is simple but powerful. The deployed model is now wr
 Saving it as an agent turns it into something you can build real systems with. This is the moment where a model becomes an agent. And here in Foundry, you can customize your agent by setting clear instructions, adding tools it can call, grounding it with knowledge, enabling memory, and applying guardrails, shaping how the agent thinks, acts, and behaves in real-world scenarios.
 
 
-# 5. Trouble shooting. Check Available Versions in Your RegionRun the Azure CLI command below to verify exactly which versions and SKUs of gpt-5-mini are supported in your deployment region (e.g., eastus):
+# 6. Trouble shooting. 
+
+Check Available Versions in Your RegionRun the Azure CLI command below to verify exactly which versions and SKUs of gpt-5-mini are supported in your deployment region (e.g., eastus):
 
 ```powershell
 az cognitiveservices model list --location southindia --query "[?model.name=='gpt-5-mini'].{version:model.version, skus:join(',', model.skus[].name)}"  --output table
 ```
 
-# 6. Reference
+# 7. Reference
 
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cognitive_account
-
 
 
