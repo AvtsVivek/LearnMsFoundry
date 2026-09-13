@@ -74,8 +74,6 @@ pip install azure-ai-projects>=2.1.0
 
 pip show azure-ai-projects
 
-cd ./src/apps/200650-AzureAiPythonEx/myenv/
-
 dir
 
 python --version

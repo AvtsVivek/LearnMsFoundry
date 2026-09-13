@@ -52,37 +52,39 @@ terraform show terraform.tfstate
 
 cd ..
 
-pwsh CreateEnvForPython.ps1
+python --version
+
+Remove-Item -Path "maf-env" -Recurse -Force
 
 python -m venv maf-env
 
-dir
-
-python --version
+.\maf-env\Scripts\activate
 
 pip install python-dotenv
 
 pip show python-dotenv
 
+pip install azure-ai-projects azure-identity
+
+pip show azure-ai-projects
+
+pip show azure-identity
+
+pip install azure-ai-projects>=2.1.0
+
+pip show azure-ai-projects
+
 pip install agent-framework-foundry
 
 pip show agent-framework-foundry
-
-pip install agent-framework-foundry
-
-pip show agent-framework-foundry
-
-python create_prompt_agent.py
-
-cd maf-env
-
-cd ..
-
-.\maf-env\Scripts\activate
 
 dir
 
 python --version
+
+pwsh CreateEnvForPython.ps1
+
+python create_prompt_agent.py
 
 python ./agent_maf.py
 
