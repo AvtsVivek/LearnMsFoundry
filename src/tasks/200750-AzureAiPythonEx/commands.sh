@@ -5,9 +5,9 @@ cd ../../..
 
 # cd into the directory.
 
-cd src/tasks/200630-AiAgentCreationWithPythonMCPServer
+cd src/tasks/200750-AzureAiPythonEx
 
-cd src/apps/200630-AiAgentCreationWithPythonMCPServer/terraform
+cd src/apps/200750-AzureAiPythonEx/terraform
 
 dir
 
@@ -83,6 +83,12 @@ pwsh ./EndpointCopyToClipboard.ps1
 
 # Open the file and paste the copied endpoints where necessary.
 python ./create_prompt_agent.py
+
+# Open the file and paste the copied endpoints where necessary.
+python ./my_first_agent.py
+
+# Open the file and paste the copied endpoints where necessary.
+python ./my_first_agent_asking-to_tell_a_joke.py
 
 cd ./terraform
 

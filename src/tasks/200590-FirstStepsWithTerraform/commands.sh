@@ -5,9 +5,9 @@ cd ../../..
 
 # cd into the directory.
 
-cd src/tasks/200650-AzureAiPythonEx
+cd src/tasks/200590-FirstStepsWithTerraform
 
-cd src/apps/200650-AzureAiPythonEx/terraform
+cd src/apps/200590-FirstStepsWithTerraform
 
 dir
 
@@ -23,8 +23,6 @@ terraform validate
 
 # Clear off the previous state, if any.
 terraform plan -destroy -out main.destroy.tfplan
-
-terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
 
@@ -50,52 +48,8 @@ terraform state show azurerm_cognitive_account_project.foundry_project
 
 terraform show terraform.tfstate
 
-cd ..
-
-python --version
-
-Remove-Item -Path "myenv" -Recurse -Force
-
-python -m venv "myenv"
-
-myenv\Scripts\activate
-
-pip install python-dotenv
-
-pip show python-dotenv
-
-pip install azure-ai-projects azure-identity
-
-pip show azure-ai-projects
-
-pip show azure-identity
-
-pip install azure-ai-projects>=2.1.0
-
-pip show azure-ai-projects
-
-dir
-
-python --version
-
-# Run the script to copy the endpoints to the clipboard.
-pwsh ./EndpointCopyToClipboard.ps1
-
-# Open the file and paste the copied endpoints where necessary.
-python ./create_prompt_agent.py
-
-# Open the file and paste the copied endpoints where necessary.
-python ./my_first_agent.py
-
-# Open the file and paste the copied endpoints where necessary.
-python ./my_first_agent_asking-to_tell_a_joke.py
-
-cd ./terraform
-
 terraform plan -destroy -out main.destroy.tfplan
 
 terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
-
-Remove-Item -Path "../myenv" -Recurse -Force

@@ -5,9 +5,9 @@ cd ../../..
 
 # cd into the directory.
 
-cd src/tasks/200700-MicrosoftAgentFrameworkPyEx
+cd src/tasks/200680-AiAgentCreationWithPythonMCPServer
 
-cd src/apps/200700-MicrosoftAgentFrameworkPyEx/terraform
+cd src/apps/200680-AiAgentCreationWithPythonMCPServer/terraform
 
 dir
 
@@ -54,11 +54,11 @@ cd ..
 
 python --version
 
-Remove-Item -Path "maf-env" -Recurse -Force
+Remove-Item -Path "myenv" -Recurse -Force
 
-python -m venv maf-env
+python -m venv "myenv"
 
-.\maf-env\Scripts\activate
+myenv\Scripts\activate
 
 pip install python-dotenv
 
@@ -74,19 +74,15 @@ pip install azure-ai-projects>=2.1.0
 
 pip show azure-ai-projects
 
-pip install agent-framework-foundry
-
-pip show agent-framework-foundry
-
 dir
 
 python --version
 
-pwsh CreateEnvForPython.ps1
+# Run the script to copy the endpoints to the clipboard.
+pwsh ./EndpointCopyToClipboard.ps1
 
-python create_prompt_agent.py
-
-python ./agent_maf.py
+# Open the file and paste the copied endpoints where necessary.
+python ./create_prompt_agent.py
 
 cd ./terraform
 
@@ -96,5 +92,4 @@ terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
 
-Remove-Item -Path "../maf-env" -Recurse -Force
-    
+Remove-Item -Path "../myenv" -Recurse -Force

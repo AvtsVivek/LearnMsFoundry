@@ -19,3 +19,5 @@ Write-Host "Foundry project model deployment name is: $foundryProjectModelDeploy
 # 4. Copy the endpoints to the clipboard
 $foundryProjectApiEndpoint | Set-Clipboard
 
+Write-Host "The following Foundry project API endpoint has been copied to the clipboard:"
+Write-Host "$foundryProjectApiEndpoint"

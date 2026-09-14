@@ -5,9 +5,9 @@ cd ../../..
 
 # cd into the directory.
 
-cd src/tasks/200600-FirstStepsWithTerraform
+cd src/tasks/200900-MicrosoftAgentFrameworkPyEx
 
-cd src/apps/200600-FirstStepsWithTerraform
+cd src/apps/200900-MicrosoftAgentFrameworkPyEx/terraform
 
 dir
 
@@ -23,6 +23,8 @@ terraform validate
 
 # Clear off the previous state, if any.
 terraform plan -destroy -out main.destroy.tfplan
+
+terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
 
@@ -48,8 +50,54 @@ terraform state show azurerm_cognitive_account_project.foundry_project
 
 terraform show terraform.tfstate
 
+cd ..
+
+python --version
+
+Remove-Item -Path "maf-env" -Recurse -Force
+
+python -m venv maf-env
+
+.\maf-env\Scripts\activate
+
+pip install python-dotenv
+
+pip show python-dotenv
+
+pip install azure-ai-projects azure-identity
+
+pip show azure-ai-projects
+
+pip show azure-identity
+
+pip install azure-ai-projects>=2.1.0
+
+pip show azure-ai-projects
+
+pip install agent-framework-foundry
+
+pip show agent-framework-foundry
+
+dir
+
+python --version
+
+cd ..
+
+pwsh CreateEnvForPython.ps1
+
+python create_prompt_agent.py
+
+python ./agent_maf.py
+
+cd ./terraform
+
 terraform plan -destroy -out main.destroy.tfplan
 
 terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
+
+Remove-Item -Path "../maf-env" -Recurse -Force
+
+    
