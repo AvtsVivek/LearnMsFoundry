@@ -96,3 +96,5 @@ terraform show main.destroy.tfplan
 
 terraform apply main.destroy.tfplan
 
+Remove-Item -Path "../maf-env" -Recurse -Force
+    
