@@ -3,6 +3,8 @@ A repo to learn Microsoft Foundry
 
 The gitignore is got from [here](https://github.com/microsoft/Foundry-Local/blob/main/.gitignore)
 
+
+
 # References
 1. https://www.youtube.com/shorts/-9SzGRbaS_E
 2. https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry?tabs=csharp
@@ -13,6 +15,18 @@ The gitignore is got from [here](https://github.com/microsoft/Foundry-Local/blob
 7. https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent
 8. https://zerotomastery.io/courses/azure-ai-bootcamp/
 
+
+
+# Foundry Local
+1. https://www.foundrylocal.ai/
+2. https://learn.microsoft.com/en-us/azure/foundry-local/what-is-foundry-local
+3. https://github.com/microsoft/Foundry-Local/tree/main/samples
+4. https://www.foundrylocal.ai/models
+
+# Foundry Toolkit
+1. https://www.youtube.com/playlist?list=PLJfWOmd-Usr4
+2. https://code.visualstudio.com/docs/intelligentapps/overview#_verifying-and-installing-foundry-toolkit-pre-requisites-local-models
+3. https://www.youtube.com/watch?v=IioWS8yhjJc
 
 # 1. Define required providers
 
