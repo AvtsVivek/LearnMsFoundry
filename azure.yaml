@@ -1,0 +1,5 @@
+name: learn-ms-foundry
+
+services:
+  vivekgpt-5-agent:
+    host: azure.ai.agent

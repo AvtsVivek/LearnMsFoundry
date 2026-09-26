@@ -45,11 +45,19 @@ If you choose custom deploy, you can change some parameters as follows.
 
 ![Custom Deploy](images/56_50_CustomDeploy.png)
 
-You can deploy multiple models. And view them as follows.
+You can deploy multiple models. And view them as follows. The following is the model view
 
 ![Models](images/57_50_Models.png)
 
-In the above, click any of the model, and you can enter the playground. Now in the playground, you can compare.
+If you want to see the details of deployed model, click the three dots at the far right of each row, and select edit
+
+![Model details Edit from Model view](images/57_60_EditDeployedModel.png)
+
+The model details are displayed as follows.
+
+![Model Details](images/57_70_ViewModelDetails.png)
+
+In the above Model view list, click any of the model, and you can enter the playground. Now in the playground, you can compare.
 
 ![Open Model in Playground](images/58_50_OpenModelInPlayGround.png)
 
