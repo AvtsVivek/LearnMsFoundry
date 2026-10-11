@@ -72,13 +72,31 @@ wsl.exe --install -d Ubuntu
 
 ![Give project name](images/61_50_EnterProjectName.png)
 
-18. Project creation happening
+18. Project creation happening. Look bottom right of VS Code.
 
 ![Project creation happening](images/62_50_ProjectCreatedSuccessifuly.png)
 
-19. Deploy model
+19. Deploy model. Once the project is deployed successfully, you can see a prompt in botton right to deploy a new model. Click that and model catelog will show up.
 
 ![Deploy the model](images/63_50_TimeToDeployAModel.png)
+
+20. If the model catelog is closed, you can open the model catelog as follows. Right click the Models under My Resources and select Deploy new AI model
+
+![Open model catelog](images/64_50_OpenAIModelCatelog.png)
+
+21. You can use the Command Palette also to open the model catelogue.
+
+![Open model catelogue useing the Command Palette](images/65_50_OpenModelCatelogue_FromCommandPalatte.png)
+
+22. Model Catelogue looks as follows. Do ensure VPN is disconnected. 
+
+![Model Catelogue](images/66_50_ModelCatelogue.png)
+
+23. Filter models, search for some model, and then hover over a model. Then deploy it as follows.
+
+![Deploy a model](images/67_50_DeployFromModelCatelogue.png)
+
+23. 
 
 # Ref
 1. https://code.visualstudio.com/docs/intelligentapps/overview#_install-and-setup
