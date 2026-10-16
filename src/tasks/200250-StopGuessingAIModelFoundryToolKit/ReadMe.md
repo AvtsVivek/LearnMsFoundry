@@ -21,6 +21,10 @@ Here is more info about the same.
 
 ![PromptForModels](images/51_50_PromptForModelsTow.png)
 
+And here is the response
+
+![Prompt with respojse](images/51_60_PromptForModelsWithResponse.png)
+
 You can open the model catelog using the following command in the command palette. 
 
 ![Open Model Catelogue](images/52_50_OpenModelCatalogFromVsCodePalette.png)
@@ -61,7 +65,7 @@ In the above Model view list, click any of the model, and you can enter the play
 
 ![Open Model in Playground](images/58_50_OpenModelInPlayGround.png)
 
-Once in compare mode in the playground, you can ask same question to multiple models like the follows.
+Once in compare mode in the playground, you can ask same question to multiple models like the follows. You can type the following in the text box to compare. Create a short linkedin post about developer productivity with AI tools
 
 ![Playground Prompt](images/59_50_OpenModelInPlayGroundCompareWitPrompt.png)
 
@@ -91,5 +95,9 @@ Your role is to :
 - Engage with users in natual conversation to understand their social  media content creation goals
 
 ![Social Medial Team](images/65_50_SocialMedialTeam.png)
+
+Here is another screen shot
+
+![Social media example](images/65_50_SocialMedialTeam2.png)
 
 
